@@ -1,0 +1,17 @@
+2017-06-28 14:23:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Sequence "SCOREBEFORE_ID_SEQ" already exists; SQL statement:
+           
+CREATE SEQUENCE PUBLIC.SCOREBEFORE_ID_SEQ START WITH 1 CACHE 1 [90035-196]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.ddl.CreateSequence.update(CreateSequence.java:57)
+	at org.h2.command.dml.RunScriptCommand.execute(RunScriptCommand.java:78)
+	at org.h2.command.dml.RunScriptCommand.update(RunScriptCommand.java:57)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:101)
+	at org.h2.command.Command.executeUpdate(Command.java:260)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:192)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:164)
+	at org.h2.tools.RunScript.processRunscript(RunScript.java:283)
+	at org.h2.tools.RunScript.runTool(RunScript.java:140)
+	at org.h2.tools.RunScript.main(RunScript.java:69)
